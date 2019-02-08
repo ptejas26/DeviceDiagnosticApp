@@ -2,8 +2,8 @@
 //  DeviceDiagnosticAppTests.swift
 //  DeviceDiagnosticAppTests
 //
-//  Created by Globallogic on 01/02/19.
-//  Copyright © 2019 Globallogic. All rights reserved.
+//  Created by Tejas Patelia on 01/02/19.
+//  Copyright © 2019 Tejas Patelia. All rights reserved.
 //
 
 import XCTest

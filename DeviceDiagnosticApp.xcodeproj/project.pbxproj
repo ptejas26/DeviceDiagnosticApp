@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74A1ACD6220B7322006C8836 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A1ACD5220B7322006C8836 /* CollectionCell.swift */; };
+		74A1ACD7220B7322006C8836 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A1ACD5220B7322006C8836 /* CollectionCell.swift */; };
 		74C5F7AD22041ACF007CA020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7AC22041ACF007CA020 /* AppDelegate.swift */; };
 		74C5F7AF22041ACF007CA020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7AE22041ACF007CA020 /* ViewController.swift */; };
 		74C5F7B222041ACF007CA020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C5F7B022041ACF007CA020 /* Main.storyboard */; };
 		74C5F7B422041AD1007CA020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C5F7B322041AD1007CA020 /* Assets.xcassets */; };
 		74C5F7B722041AD1007CA020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C5F7B522041AD1007CA020 /* LaunchScreen.storyboard */; };
 		74C5F7C222041AD1007CA020 /* DeviceDiagnosticAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7C122041AD1007CA020 /* DeviceDiagnosticAppTests.swift */; };
+		74C5F7CD2204221E007CA020 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7CC2204221E007CA020 /* BluetoothViewController.swift */; };
+		74C5F7CE2204221E007CA020 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7CC2204221E007CA020 /* BluetoothViewController.swift */; };
+		74C5F7D022044717007CA020 /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7CF22044717007CA020 /* SensorViewController.swift */; };
+		74C5F7D122044717007CA020 /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7CF22044717007CA020 /* SensorViewController.swift */; };
+		74C5F7D322044726007CA020 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7D222044726007CA020 /* SpeakerViewController.swift */; };
+		74C5F7D422044726007CA020 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7D222044726007CA020 /* SpeakerViewController.swift */; };
+		74C5F7D622044730007CA020 /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7D522044730007CA020 /* MicViewController.swift */; };
+		74C5F7D722044730007CA020 /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7D522044730007CA020 /* MicViewController.swift */; };
+		74C5F7D922044A93007CA020 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74C5F7D822044A93007CA020 /* test.mp3 */; };
+		74E80845220E079C00E5CB54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5F7AE22041ACF007CA020 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74A1ACD5220B7322006C8836 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		74C5F7A922041ACF007CA020 /* DeviceDiagnosticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceDiagnosticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C5F7AC22041ACF007CA020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74C5F7AE22041ACF007CA020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +49,11 @@
 		74C5F7BD22041AD1007CA020 /* DeviceDiagnosticAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceDiagnosticAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C5F7C122041AD1007CA020 /* DeviceDiagnosticAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiagnosticAppTests.swift; sourceTree = "<group>"; };
 		74C5F7C322041AD1007CA020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74C5F7CC2204221E007CA020 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		74C5F7CF22044717007CA020 /* SensorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
+		74C5F7D222044726007CA020 /* SpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
+		74C5F7D522044730007CA020 /* MicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
+		74C5F7D822044A93007CA020 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +74,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74A1ACD1220B727B006C8836 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74C5F7B022041ACF007CA020 /* Main.storyboard */,
+				74C5F7B522041AD1007CA020 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74A1ACD2220B728A006C8836 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74C5F7AC22041ACF007CA020 /* AppDelegate.swift */,
+				74C5F7AE22041ACF007CA020 /* ViewController.swift */,
+				74C5F7CF22044717007CA020 /* SensorViewController.swift */,
+				74C5F7D222044726007CA020 /* SpeakerViewController.swift */,
+				74C5F7D522044730007CA020 /* MicViewController.swift */,
+				74C5F7CC2204221E007CA020 /* BluetoothViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		74A1ACD3220B7290006C8836 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74A1ACD5220B7322006C8836 /* CollectionCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74A1ACD4220B72AD006C8836 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74C5F7B322041AD1007CA020 /* Assets.xcassets */,
+				74C5F7B822041AD1007CA020 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		74C5F7A022041ACF007CA020 = {
 			isa = PBXGroup;
 			children = (
+				74C5F7D822044A93007CA020 /* test.mp3 */,
 				74C5F7AB22041ACF007CA020 /* DeviceDiagnosticApp */,
 				74C5F7C022041AD1007CA020 /* DeviceDiagnosticAppTests */,
 				74C5F7AA22041ACF007CA020 /* Products */,
@@ -77,12 +135,10 @@
 		74C5F7AB22041ACF007CA020 /* DeviceDiagnosticApp */ = {
 			isa = PBXGroup;
 			children = (
-				74C5F7AC22041ACF007CA020 /* AppDelegate.swift */,
-				74C5F7AE22041ACF007CA020 /* ViewController.swift */,
-				74C5F7B022041ACF007CA020 /* Main.storyboard */,
-				74C5F7B322041AD1007CA020 /* Assets.xcassets */,
-				74C5F7B522041AD1007CA020 /* LaunchScreen.storyboard */,
-				74C5F7B822041AD1007CA020 /* Info.plist */,
+				74A1ACD4220B72AD006C8836 /* Resources */,
+				74A1ACD3220B7290006C8836 /* Model */,
+				74A1ACD1220B727B006C8836 /* View */,
+				74A1ACD2220B728A006C8836 /* Controller */,
 			);
 			path = DeviceDiagnosticApp;
 			sourceTree = "<group>";
@@ -177,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C5F7D922044A93007CA020 /* test.mp3 in Resources */,
 				74C5F7B722041AD1007CA020 /* LaunchScreen.storyboard in Resources */,
 				74C5F7B422041AD1007CA020 /* Assets.xcassets in Resources */,
 				74C5F7B222041ACF007CA020 /* Main.storyboard in Resources */,
@@ -197,7 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C5F7D322044726007CA020 /* SpeakerViewController.swift in Sources */,
+				74C5F7CD2204221E007CA020 /* BluetoothViewController.swift in Sources */,
+				74C5F7D622044730007CA020 /* MicViewController.swift in Sources */,
 				74C5F7AF22041ACF007CA020 /* ViewController.swift in Sources */,
+				74A1ACD6220B7322006C8836 /* CollectionCell.swift in Sources */,
+				74C5F7D022044717007CA020 /* SensorViewController.swift in Sources */,
 				74C5F7AD22041ACF007CA020 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C5F7D422044726007CA020 /* SpeakerViewController.swift in Sources */,
 				74C5F7C222041AD1007CA020 /* DeviceDiagnosticAppTests.swift in Sources */,
+				74C5F7CE2204221E007CA020 /* BluetoothViewController.swift in Sources */,
+				74C5F7D722044730007CA020 /* MicViewController.swift in Sources */,
+				74E80845220E079C00E5CB54 /* ViewController.swift in Sources */,
+				74C5F7D122044717007CA020 /* SensorViewController.swift in Sources */,
+				74A1ACD7220B7322006C8836 /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,14 +428,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeviceDiagnosticApp/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2E92E637T7;
+				INFOPLIST_FILE = "$(SRCROOT)/DeviceDiagnosticApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Globallogic.DeviceDiagnosticApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeviceDiagnosticApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GL_Windstream_Dev;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,14 +448,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeviceDiagnosticApp/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2E92E637T7;
+				INFOPLIST_FILE = "$(SRCROOT)/DeviceDiagnosticApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Globallogic.DeviceDiagnosticApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeviceDiagnosticApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GL_Windstream_Dev;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

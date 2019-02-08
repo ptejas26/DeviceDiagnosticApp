@@ -2,8 +2,8 @@
 //  BluetoothViewController.swift
 //  DeviceDiagnosticApp
 //
-//  Created by Globallogic on 01/02/19.
-//  Copyright © 2019 Globallogic. All rights reserved.
+//  Created by Tejas Patelia on 01/02/19.
+//  Copyright © 2019 Tejas Patelia. All rights reserved.
 //
 
 import UIKit
@@ -21,6 +21,7 @@ class BluetoothViewController: UIViewController {
     let deviceName = "HMSoft"
     var connected = CBPeripheralState.connected
     var disconnected = CBPeripheralState.disconnected
+    weak var blueDelegate : DiagnosticStatusDelegate?
 
     
     //Define class variable in your VC/AppDelegate
@@ -28,6 +29,8 @@ class BluetoothViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Bluetooth Diagnostic"
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,17 +42,24 @@ class BluetoothViewController: UIViewController {
         
         let options = [CBCentralManagerOptionShowPowerAlertKey:1] //<-this is the magic bit!
         bluetoothPeripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: options)
+        
     }
+    
+    
     @IBAction func connectToDevice() {
         manager = CBCentralManager(delegate: self, queue: nil)
     }
     
-//    func requestBluetoothPermission() {
-//        
-//        let showPermissionAlert = 1
-//        let options = [CBCentralManagerOptionShowPowerAlertKey: showPermissionAlert]
-//        bluetoothPeripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: options)
-//    }
+    
+    @IBAction func successAction(sender: UIButton) {
+        blueDelegate?.returnDiagnosticStatus(.WorkingSuccessfully, assetType: .BlueTooth)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func failureAction(sender: UIButton) {
+        blueDelegate?.returnDiagnosticStatus(.FailedDueToFault, assetType: .BlueTooth)
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension BluetoothViewController: CBPeripheralManagerDelegate,CBPeripheralDelegate,CBCentralManagerDelegate{
@@ -125,33 +135,31 @@ extension BluetoothViewController: CBPeripheralManagerDelegate,CBPeripheralDeleg
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         
         var statusMessage = ""
-        
-        switch peripheral.state {
-        case .poweredOn:
-            statusMessage = "Bluetooth Status: Turned On"
+        //To make sure that user can read the guidelines
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
+            switch peripheral.state {
+            case .poweredOn:
+                statusMessage = "Bluetooth Status: Turned On"
+                self.successAction(sender: UIButton())
+                break
+            case .poweredOff:
+                statusMessage = "Bluetooth Status: Turned Off"
+                fallthrough
+            case .resetting:
+                statusMessage = "Bluetooth Status: Resetting"
+                fallthrough
+            case .unauthorized:
+                statusMessage = "Bluetooth Status: Not Authorized"
+                fallthrough
+            case .unsupported:
+                statusMessage = "Bluetooth Status: Not Supported"
+                fallthrough
+            case .unknown:
+                statusMessage = "Bluetooth Status: Unknown"
+                self.failureAction(sender: UIButton())
+            }
             
-        case .poweredOff:
-            statusMessage = "Bluetooth Status: Turned Off"
-            
-        case .resetting:
-            statusMessage = "Bluetooth Status: Resetting"
-            
-        case .unauthorized:
-            statusMessage = "Bluetooth Status: Not Authorized"
-            
-        case .unsupported:
-            statusMessage = "Bluetooth Status: Not Supported"
-            
-        case .unknown:
-            statusMessage = "Bluetooth Status: Unknown"
-        }
-        
-        print(statusMessage)
-        
-        if peripheral.state == .poweredOff {
-            
-        }else if peripheral.state == .poweredOn {
-            
+            print(statusMessage)
         }
     }
 }
